@@ -1,0 +1,560 @@
+/* CLEAR */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* CLEAR */
+
+#navbar {
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    gap: 0 3rem;
+    z-index: 1;
+    padding: 0 2rem;
+    background-color: #fff5ea;
+}
+
+#navbar .items1 {
+    flex-shrink: 3;
+    padding: 1rem 1rem;
+    border-right: 1px solid rgba(18, 74, 47, 0.1);
+}
+
+#navbar .items1 a .logo {
+    width: 12rem;
+}
+
+#navbar .items2 {
+    flex-grow: 2;
+}
+
+#navbar .items2 ul {
+    list-style: none;
+    display: flex;
+    gap: 0 1rem;
+}
+
+#navbar .items2 ul li a{
+    font-size: 1rem;
+}
+
+#navbar .items3 {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-shrink: 2;
+}
+
+#navbar .items3 .choise1 {
+    border-radius: 14px;
+    background-color: #1e611e;
+    color: white;
+    font-weight: 600;
+    padding: 12px 24px;
+}
+
+#navbar .items3 .choise2 .dot-menu {
+    width: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+#navbar .bar {
+    padding: 8px 12px;
+    border: 1px solid #124a2f;
+    border-radius: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* FIRST SECTION */
+
+#firstSection {
+    height: 100vh;
+    padding: 0 4rem;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5efe8;
+}
+
+#firstSection .container {
+    display: flex;
+    align-items: center;
+    padding: 0 4rem;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+#firstSection .shape1 {
+    position: absolute;
+    left: 0;
+    top: 4px;
+    animation: bottom-up 4s infinite;
+}
+
+#firstSection .shape2 {
+    position: absolute;
+    right: 2px;
+    top: 0;
+    animation: left-right 4s infinite;
+}
+
+#firstSection .shape3 {
+    position: absolute;
+    right: 2px;
+    bottom: 0;
+    animation: left-right 4s infinite;
+}
+
+
+@keyframes left-right {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-1rem);
+    }
+}
+
+@keyframes bottom-up {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-3rem);
+    }
+}
+
+@keyframes bottom-up {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-3rem);
+    }
+}
+
+/* SECTION 1 LEFT SIDE */
+
+#firstSection .left-side {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#firstSection .left-side h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #124a2f;
+}
+
+#firstSection .left-side p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin: 1rem 0;
+}
+
+#firstSection .left-side button {
+    font-weight: 600;
+    padding: 18px 40px;
+    margin-right: 1rem;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+    background-color: #f3d0a1;
+}
+
+#firstSection .left-side button:nth-child(2) {
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: rgb(6, 56, 32);
+}
+
+#firstSection .left-side button:hover {
+    background-color: rgb(18, 74, 47);
+    color: white;
+}
+
+/* SECTION 1 RIGHT SIDE */
+
+#firstSection .right-side {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 0 2rem;
+    box-sizing: border-box;
+}
+
+#firstSection .right-side .right-img {
+    position: relative;
+}
+
+#firstSection .right-side .right-img .image {
+    width: 500px;
+    height: 500px;
+    background-image: url("assets/imgs/1-1.jpg");
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    border-radius: 100%;
+}
+
+#firstSection .right-img .img-bg{
+    height: 100%;
+    width: 40%;
+    position: absolute;
+    top: 0;
+    right: -6rem;
+    border-radius: 0 16rem 16rem 0  ;
+    background-color: #f7ca8f;
+}
+
+
+
+
+/* SECOND SECTION */
+
+
+
+
+#secondSection {
+    width: 100%;
+    position: relative;
+}
+
+#secondSection .content {
+    width: 100%;
+    padding: 3rem;
+    box-sizing: border-box;
+    background-color: #124a2f;
+}
+
+#secondSection .feature-sect .features {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+#secondSection .feature-sect .features .feature-cards {
+    flex: 0 0 30%;
+    margin: 0 1rem 3rem 0;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.features .feature-cards .feature-content {
+    padding: 2rem;
+    border-radius: 20px;
+    transition: all 0.3s ease-out 0s;
+}
+
+.features .feature-cards .feature-content:hover {
+    background-color: wheat;
+}
+
+.features .feature-cards .feature-content:hover .img-icon a {
+    background-color: white;
+}
+
+.features .feature-cards .feature-content .img-icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.img-icon a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    padding: 1rem;
+    border: 1px solid black;
+    transition: all 0.3s ease-out 0s;
+}
+
+.img-icon i {
+    font-size: 2rem;
+    transform: translate(-15px, 12px) rotate(-45deg);
+}
+
+#secondSection .achievements {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+#secondSection .achievements .achiev-child {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    flex: 0 0 25%;
+    margin-bottom: 1rem;
+}
+
+#secondSection .achievements .achiev-child h3 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.1rem;
+}
+
+#secondSection .achievements .achiev-child i {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+#secondSection .badge {
+    width: 10rem;
+    height: 15rem;
+    padding: 2rem;
+    box-sizing: border-box;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    right: 13rem;
+    top: 40%;
+    border-radius: 0 0 100px 100px;
+    border: 1px solid black;
+    border-top: 3px solid black;
+}
+
+#secondSection .badge h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #124a2f;
+}
+
+#secondSection .badge p {
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #237c23;
+}
+
+#secondSection .badge i {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #237c23;
+    transform: rotate(-30deg);
+}
+
+/* THIRD SECTION */
+#thirdSect {
+    padding: 5rem 0 4rem;
+}
+
+#thirdSect .choices {
+    display: flex;
+}
+
+#thirdSect .choices .p-choice {
+    height: 5rem;
+    width: 25%;
+    flex: 0 0 25%;
+    padding: 0 2rem;
+    box-sizing: border-box;
+}
+
+#thirdSect .choices .p-choice .choice {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#thirdSect .choices .p-choice .choice .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 50px;
+    width: 3rem;
+    height: 3rem;
+}
+
+#thirdSect .choices .p-choice .choice .icon i {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transform: rotate(-45deg);
+    transition: all 0.2s;
+}
+
+.choice:hover .icon i {
+    transition: all 0.2s;
+    background-color: #1e611e;
+
+}
+
+
+
+
+/* MEDIA QUERY */
+@media (max-width: 1120px) {
+
+    #navbar .items2 {
+        display: none;
+    }
+
+    
+    #navbar .items3 {
+        display: none;
+    }
+    
+    #navbar .bar {
+        display: block;
+    }
+
+    #firstSection {
+        padding: 0 1rem;
+    }
+    
+    #firstSection .shape3 {
+        width: 20rem;
+    }
+    
+    #firstSection .shape2 {
+        width: 40rem;
+    }
+
+    #firstSection .shape1 {
+        width: 6rem;
+    }
+    
+    #firstSection .right-side .right-img .image {
+        display: none;
+    }
+    
+    #firstSection .container {
+        justify-content: start;
+    }
+    
+    #firstSection .container .left-side {
+        width: 90%;
+        z-index: 1;
+    }
+    
+    #firstSection .container .left-side h1{
+        font-size: 4rem;
+    }
+    
+    #firstSection .container .left-side p {
+        font-size: 1.2rem;
+    }
+
+    #secondSection .feature-sect .features .feature-cards {
+        flex: 0 0 45%;
+        margin: 0 1rem 2rem 0 ;
+    }
+
+    #secondSection .achievements .achiev-child {
+        display: flex;
+        flex: 0 0 40%;
+    }
+
+    #thirdSect .choices {
+        flex-wrap: wrap;
+    }
+
+    #thirdSect .choices .p-choice {
+        margin: 0 -1rem;
+        flex: 0 0 50%;
+    }
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+    #firstSection {
+        padding: 0 0 0 10px;
+        box-sizing: content-box;
+    }
+
+    #navbar .items3 {
+        display: none;
+    }
+
+    #firstSection .container .left-side {
+        flex: 0 0 100%;
+    }
+
+    #firstSection .container .left-side h1{
+        font-size: 2.2rem;
+    }
+    
+    #firstSection .container {
+        display: flex;
+        padding: 0 5px;
+    }
+
+    #secondSection .feature-sect .features .feature-cards {
+        flex: 0 0 100%;
+        margin: 0 1rem 2rem 0 ;
+    }
+
+    #secondSection .achievements .achiev-child {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+        flex: 0 0 100%;
+        margin-bottom: 3rem;
+    }
+
+    #thirdSect .choices .p-choice {
+        flex: 0 0 100%;
+    }
+    
+}
+
+@media (min-width: 1600px) {
+    #secondSection .content {
+        width: 70%;
+    }
+
+    #secondSection .badge {
+        display: flex;
+    }
+}
